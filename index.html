@@ -1,0 +1,757 @@
+<html lang="hi"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ashish Relan | Nutrigenomics Dietitian &amp; Nutritionist | Nutrition &amp; Wellness Guidance</title>
+  <meta name="description" content="Connect with Ashish Relan, Nutrigenomics Dietitian &amp; Nutritionist, for personalized nutrition and wellness guidance and a free initial screening.">
+  <meta name="theme-color" content="#0f766e">
+  <style>
+    :root {
+      --teal: #0f766e;
+      --teal-dark: #0d5c56;
+      --teal-light: #ccfbf1;
+      --green: #16a34a;
+      --green-dark: #15803d;
+      --slate: #1e293b;
+      --muted: #64748b;
+      --bg: #f8fafc;
+      --white: #ffffff;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--slate);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    .container { max-width: 960px; margin: 0 auto; padding: 0 18px; }
+
+    /* Header */
+    header {
+      background: linear-gradient(135deg, var(--teal) 0%, #0e7490 100%);
+      color: white;
+      padding: 14px 0;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      box-shadow: 0 4px 20px rgba(15,118,110,0.25);
+    }
+    header h1 { font-size: 1.28rem; font-weight: 800; letter-spacing: 0.3px; }
+    header p { font-size: 0.82rem; opacity: 0.92; margin-top: 2px; }
+
+    /* Hero - Screening focused */
+    .hero {
+      background: linear-gradient(180deg, #f0fdfa 0%, #f8fafc 70%);
+      padding: 32px 16px 28px;
+      text-align: center;
+    }
+    .hero-badge {
+      display: inline-block;
+      background: var(--teal-light);
+      color: var(--teal);
+      font-size: 0.78rem;
+      font-weight: 700;
+      padding: 5px 14px;
+      border-radius: 999px;
+      margin-bottom: 14px;
+    }
+    .hero-title {
+      font-size: clamp(1.55rem, 5.2vw, 2.2rem);
+      color: var(--teal);
+      font-weight: 800;
+      margin-bottom: 12px;
+      line-height: 1.25;
+    }
+    .hero-sub {
+      font-size: 1.02rem;
+      color: var(--slate);
+      max-width: 540px;
+      margin: 0 auto 14px;
+      font-weight: 500;
+    }
+    .hero-support {
+      font-size: 0.95rem;
+      color: var(--muted);
+      max-width: 520px;
+      margin: 0 auto 22px;
+      line-height: 1.55;
+    }
+    .cta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: center;
+      margin-bottom: 8px;
+    }
+    .cta-primary {
+      display: inline-block;
+      background: var(--green);
+      color: white;
+      padding: 14px 26px;
+      border-radius: 999px;
+      font-weight: 700;
+      font-size: 1.05rem;
+      text-decoration: none;
+      box-shadow: 0 8px 18px -4px rgba(22,163,74,0.4);
+      transition: transform 0.15s, background 0.15s;
+    }
+    .cta-primary:hover { background: var(--green-dark); transform: translateY(-2px); }
+    .cta-secondary {
+      display: inline-block;
+      background: white;
+      color: var(--teal);
+      border: 2px solid var(--teal);
+      padding: 12px 22px;
+      border-radius: 999px;
+      font-weight: 700;
+      font-size: 0.98rem;
+      text-decoration: none;
+      transition: background 0.15s;
+    }
+    .cta-secondary:hover { background: var(--teal-light); }
+
+    /* Intro / Trust */
+    .intro {
+      background: white;
+      padding: 36px 16px;
+      border-bottom: 1px solid #e2e8f0;
+    }
+    .intro-inner {
+      max-width: 640px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .intro-name {
+      font-size: 1.35rem;
+      font-weight: 800;
+      color: var(--teal);
+      margin-bottom: 4px;
+    }
+    .intro-role {
+      font-size: 0.95rem;
+      color: var(--muted);
+      font-weight: 600;
+      margin-bottom: 14px;
+    }
+    .intro-text {
+      font-size: 0.98rem;
+      color: var(--slate);
+      line-height: 1.65;
+    }
+    .photo-placeholder {
+      width: 96px;
+      height: 96px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #e2e8f0, #cbd5e1);
+      margin: 0 auto 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.7rem;
+      color: #64748b;
+      text-align: center;
+      padding: 8px;
+      border: 2px dashed #94a3b8;
+    }
+
+    /* Form - High priority */
+    .form-section {
+      background: #f0fdfa;
+      padding: 40px 16px 48px;
+    }
+    .form-box {
+      max-width: 500px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 18px;
+      padding: 26px 20px;
+      box-shadow: 0 12px 30px -8px rgba(15,118,110,0.15);
+      border: 1px solid #ccfbf1;
+    }
+    .form-box h2 {
+      text-align: center;
+      color: var(--teal);
+      font-size: 1.35rem;
+      margin-bottom: 6px;
+    }
+    .form-box .form-sub {
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.9rem;
+      margin-bottom: 20px;
+    }
+    .form-group { margin-bottom: 14px; }
+    .form-group label {
+      display: block;
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: var(--slate);
+      margin-bottom: 5px;
+    }
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      padding: 12px 14px;
+      border: 1.5px solid #cbd5e1;
+      border-radius: 10px;
+      font-size: 1rem;
+      font-family: inherit;
+      transition: border-color 0.2s;
+      background: white;
+    }
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      outline: none;
+      border-color: var(--teal);
+      box-shadow: 0 0 0 3px rgba(15,118,110,0.12);
+    }
+    .form-group textarea { resize: vertical; min-height: 78px; }
+    .submit-btn {
+      width: 100%;
+      background: var(--green);
+      color: white;
+      border: none;
+      padding: 15px;
+      border-radius: 12px;
+      font-size: 1.08rem;
+      font-weight: 700;
+      cursor: pointer;
+      margin-top: 6px;
+      box-shadow: 0 6px 16px -4px rgba(22,163,74,0.4);
+    }
+    .submit-btn:hover { background: var(--green-dark); }
+    .form-note {
+      text-align: center;
+      font-size: 0.78rem;
+      color: #94a3b8;
+      margin-top: 12px;
+    }
+
+    /* Product positioning - secondary */
+    .product-section {
+      background: white;
+      padding: 42px 16px;
+    }
+    .section-title {
+      text-align: center;
+      font-size: 1.5rem;
+      color: var(--teal);
+      font-weight: 800;
+      margin-bottom: 8px;
+    }
+    .section-sub {
+      text-align: center;
+      color: var(--muted);
+      max-width: 560px;
+      margin: 0 auto 28px;
+      font-size: 0.96rem;
+      line-height: 1.55;
+    }
+    .product-img {
+      display: block;
+      max-width: 260px;
+      width: 100%;
+      height: auto;
+      margin: 0 auto 20px;
+      border-radius: 16px;
+    }
+    .product-cta {
+      text-align: center;
+      margin-top: 8px;
+    }
+    .product-cta a {
+      color: var(--teal);
+      font-weight: 600;
+      font-size: 0.95rem;
+      text-decoration: none;
+    }
+
+    /* Benefits strip */
+    .benefits-strip {
+      background: #f8fafc;
+      border-top: 1px solid #e2e8f0;
+      border-bottom: 1px solid #e2e8f0;
+      padding: 40px 16px;
+    }
+    .benefit-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+    }
+    .benefit-card {
+      background: white;
+      border: 1px solid #e2e8f0;
+      border-radius: 14px;
+      padding: 20px 16px;
+      text-align: center;
+    }
+    .benefit-icon { font-size: 1.7rem; margin-bottom: 6px; }
+    .benefit-card h3 { color: var(--teal); font-size: 1.05rem; margin-bottom: 6px; }
+    .benefit-card p { color: var(--muted); font-size: 0.88rem; }
+
+    /* Ingredients */
+    .ingredients { background: white; padding: 42px 16px; }
+    .system-group { margin-bottom: 32px; }
+    .system-label {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 1.08rem;
+      font-weight: 700;
+      color: var(--teal-dark);
+      margin-bottom: 14px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid var(--teal-light);
+    }
+    .system-label span { font-size: 1.35rem; }
+    .ing-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 12px;
+    }
+    .ing-card {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 12px;
+      padding: 14px;
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+    }
+    .ing-emoji {
+      font-size: 1.6rem;
+      line-height: 1;
+      flex-shrink: 0;
+    }
+    .ing-info h4 {
+      font-size: 0.95rem;
+      color: var(--slate);
+      margin-bottom: 2px;
+    }
+    .ing-info .latin {
+      font-size: 0.72rem;
+      color: #94a3b8;
+      font-style: italic;
+      margin-bottom: 4px;
+    }
+    .ing-info p {
+      font-size: 0.84rem;
+      color: var(--muted);
+      line-height: 1.4;
+    }
+
+    /* Science */
+    .science {
+      background: linear-gradient(135deg, var(--teal) 0%, #0e7490 100%);
+      color: white;
+      padding: 42px 16px;
+    }
+    .science .section-title { color: white; }
+    .science .section-sub { color: rgba(255,255,255,0.9); }
+    .science-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 14px;
+    }
+    .science-card {
+      background: rgba(255,255,255,0.12);
+      border-radius: 12px;
+      padding: 16px;
+      backdrop-filter: blur(4px);
+    }
+    .science-card h4 { font-size: 1rem; margin-bottom: 6px; }
+    .science-card p { font-size: 0.86rem; opacity: 0.92; line-height: 1.45; }
+    .science-note {
+      margin-top: 22px;
+      font-size: 0.88rem;
+      opacity: 0.92;
+      text-align: center;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+      line-height: 1.55;
+    }
+
+    /* Disclaimer */
+    .disclaimer {
+      font-size: 0.8rem;
+      color: #64748b;
+      max-width: 700px;
+      margin: 0 auto;
+      text-align: center;
+      line-height: 1.55;
+      padding: 24px 16px 8px;
+    }
+    .disclaimer strong { color: var(--slate); }
+
+    /* Footer */
+    footer {
+      background: #0f172a;
+      color: #94a3b8;
+      text-align: center;
+      padding: 28px 16px;
+      font-size: 0.88rem;
+    }
+    footer strong { color: #e2e8f0; }
+    footer a { color: #5eead4; text-decoration: none; }
+    footer p { margin-top: 6px; }
+
+    /* Mobile refinements */
+    @media (max-width: 520px) {
+      .product-img { max-width: 220px; }
+      .ing-card { flex-direction: column; align-items: center; text-align: center; }
+      .cta-primary, .cta-secondary { width: 100%; max-width: 300px; text-align: center; }
+      .hero { padding: 26px 14px 22px; }
+      .form-box { padding: 22px 16px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <h1>ASHISH RELAN</h1>
+      <p>Nutrigenomics Dietitian &amp; Nutritionist · FOOD IS MEDICINE</p>
+    </div>
+  </header>
+
+  <!-- HERO: Education + Screening first -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-badge">Free · No obligation · WhatsApp guided</div>
+      <h2 class="hero-title">Free Nutrition &amp; Wellness Screening</h2>
+      <p class="hero-sub">
+        क्या आपकी थकान, digestion, sleep, energy या lifestyle से जुड़ी concerns आपके daily life को प्रभावित कर रही हैं?
+      </p>
+      <p class="hero-support">
+        अपनी basic nutrition &amp; lifestyle concerns share करें। मैं आपकी information देखकर आपको आगे की suitable guidance के लिए WhatsApp पर connect करूंगा।
+      </p>
+      <div class="cta-row">
+        <a href="#screening" class="cta-primary">Free Screening शुरू करें</a>
+        <a href="https://wa.me/919923185007?text=Namaste%20Ashish%20ji%2C%20mujhe%20nutrition%20%26%20wellness%20guidance%20chahiye." class="cta-secondary">WhatsApp पर बात करें</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST / PERSONAL INTRODUCTION -->
+  <section class="intro">
+    <div class="intro-inner">
+      <img src="ashish-relan.png" alt="Ashish Relan" style="width:96px;height:96px;border-radius:50%;object-fit:cover;margin:0 auto 16px;display:block;border:2px solid #0f766e;">
+      <p class="intro-name">नमस्ते, मैं Ashish Relan</p>
+      <p class="intro-role">Nutrigenomics Dietitian &amp; Nutritionist</p>
+      <p class="intro-text">
+        मेरा focus nutrition, lifestyle और evidence-based wellness guidance के माध्यम से व्यक्ति की जरूरत को समझना है। मेरा approach पहले आपकी concerns को समझना है—फिर suitability और evidence के आधार पर आगे की guidance देना।
+      </p>
+    </div>
+  </section>
+
+  <!-- SCREENING FORM - High on page -->
+  <section class="form-section" id="screening">
+    <div class="container">
+      <div class="form-box">
+        <h2>Free Nutrition &amp; Wellness Screening</h2>
+        <p class="form-sub">Details भरें। Submit पर WhatsApp message open होगा।</p>
+
+        <form id="leadForm" onsubmit="return sendToWhatsApp(event)">
+          <div class="form-group">
+            <label for="name">Full Name *</label>
+            <input type="text" id="name" name="name" required="" placeholder="आपका पूरा नाम" autocomplete="name">
+          </div>
+
+          <div class="form-group">
+            <label for="phone">WhatsApp Number *</label>
+            <input type="tel" id="phone" name="phone" required="" placeholder="10-digit mobile number" pattern="[0-9]{10}" inputmode="numeric" autocomplete="tel">
+          </div>
+
+          <div class="form-group">
+            <label for="city">City (optional)</label>
+            <input type="text" id="city" name="city" placeholder="आपका शहर" autocomplete="address-level2">
+          </div>
+
+          <div class="form-group">
+            <label for="concern">Main Concern *</label>
+            <select id="concern" name="concern" required="">
+              <option value="">Select your main concern</option>
+              <option value="Energy / Fatigue">Energy / Fatigue</option>
+              <option value="Digestion / Bloating">Digestion / Bloating</option>
+              <option value="Sleep">Sleep</option>
+              <option value="Stress">Stress</option>
+              <option value="General Wellness">General Wellness</option>
+              <option value="Nutrition Guidance">Nutrition Guidance</option>
+              <option value="Antioxidant / Cellular Wellness">Antioxidant / Cellular Wellness</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Additional Information (optional)</label>
+            <textarea id="message" name="message" placeholder="कोई और details जो आप share करना चाहें..."></textarea>
+          </div>
+
+          <button type="submit" class="submit-btn">WhatsApp पर Screening भेजें →</button>
+          <p class="form-note">Submit के बाद आपका WhatsApp open होगा। कोई spam नहीं भेजा जाता।</p>
+        </form>
+
+        <script>
+          function sendToWhatsApp(e) {
+            e.preventDefault();
+            const name = document.getElementById('name').value.trim();
+            const phone = document.getElementById('phone').value.trim();
+            const city = document.getElementById('city').value.trim() || 'Not given';
+            const concern = document.getElementById('concern').value;
+            const message = document.getElementById('message').value.trim();
+
+            if (!name || !phone || !concern) {
+              alert('Please fill Name, WhatsApp Number and Main Concern.');
+              return false;
+            }
+            if (!/^[0-9]{10}$/.test(phone)) {
+              alert('Please enter a valid 10-digit WhatsApp number.');
+              return false;
+            }
+
+            let text = `Namaste Ashish ji, maine Free Nutrition & Wellness Screening fill ki hai.%0A%0A` +
+              `Name: ${encodeURIComponent(name)}%0A` +
+              `WhatsApp: ${encodeURIComponent(phone)}%0A` +
+              `City: ${encodeURIComponent(city)}%0A` +
+              `Main concern: ${encodeURIComponent(concern)}`;
+
+            if (message) {
+              text += `%0AAdditional: ${encodeURIComponent(message)}`;
+            }
+            text += `%0A%0APlease guide me regarding the next step.`;
+
+            const waUrl = `https://wa.me/919923185007?text=${text}`;
+            window.open(waUrl, '_blank');
+            return false;
+          }
+        </script>
+      </div>
+    </div>
+  </section>
+
+  <!-- RENATUS NOVA - Secondary positioning -->
+  <section class="product-section" id="product">
+    <div class="container">
+      <h2 class="section-title">Renatus Nova — Nutritional Support</h2>
+      <p class="section-sub">
+        Renatus Nova is a nutritional supplement/nutraceutical containing multiple botanical ingredients. Its role should be understood in the context of overall nutrition, lifestyle and individual suitability.
+      </p>
+      <img src="renatus-nova-product.jpg" alt="Renatus Nova - 120 Capsules Nutraceuticals" class="product-img" width="260" height="auto" loading="lazy">
+      <p class="section-sub" style="margin-top:8px;margin-bottom:12px;">
+        12 Natural Super Herbs · 120 Capsules
+      </p>
+      <div class="product-cta">
+        <a href="https://wa.me/919923185007?text=Namaste%20Ashish%20ji%2C%20Renatus%20Nova%20ke%20baare%20mein%20suitability%20samajhna%20chahta%20hoon.">
+          Suitability समझना है? WhatsApp पर पूछें →
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefits - softened language -->
+  <section class="benefits-strip">
+    <div class="container">
+      <h2 class="section-title">Focus Areas of Support</h2>
+      <p class="section-sub">These are general areas where botanical ingredients in the formula are traditionally and nutritionally positioned</p>
+      <div class="benefit-grid">
+        <div class="benefit-card">
+          <div class="benefit-icon">💪</div>
+          <h3>Vitality Support</h3>
+          <p>Ingredients traditionally used to support everyday energy and stamina as part of a balanced lifestyle.</p>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-icon">🛡️</div>
+          <h3>Antioxidant Compounds</h3>
+          <p>Contains botanical sources of antioxidant compounds that may contribute to cellular defence pathways.</p>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-icon">🌿</div>
+          <h3>Overall Balance</h3>
+          <p>Formulated to complement nutrition and lifestyle approaches for general wellness support.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ingredients - conservative claims -->
+  <section class="ingredients">
+    <div class="container">
+      <h2 class="section-title">Key Botanical Ingredients</h2>
+      <p class="section-sub">Each ingredient is included for its traditional use and nutritional profile. Individual responses vary.</p>
+
+      <div class="system-group">
+        <div class="system-label"><span>🧠</span> Brain &amp; Mental Clarity</div>
+        <div class="ing-grid">
+          <div class="ing-card">
+            <div class="ing-emoji">🍃</div>
+            <div class="ing-info">
+              <h4>Ginkgo Biloba</h4>
+              <div class="latin">Ginkgo biloba</div>
+              <p>Traditionally used to support healthy blood flow and mental clarity.</p>
+            </div>
+          </div>
+          <div class="ing-card">
+            <div class="ing-emoji">🌿</div>
+            <div class="ing-info">
+              <h4>Ashwagandha</h4>
+              <div class="latin">Withania somnifera</div>
+              <p>Adaptogen traditionally used to support the body’s response to stress.</p>
+            </div>
+          </div>
+          <div class="ing-card">
+            <div class="ing-emoji">🌱</div>
+            <div class="ing-info">
+              <h4>Siberian Ginseng</h4>
+              <div class="latin">Eleutherococcus senticosus</div>
+              <p>Traditionally used to support stamina and resilience during periods of demand.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="system-group">
+        <div class="system-label"><span>❤️</span> Circulation &amp; Vessels</div>
+        <div class="ing-grid">
+          <div class="ing-card">
+            <div class="ing-emoji">🫐</div>
+            <div class="ing-info">
+              <h4>Bilberry</h4>
+              <div class="latin">Vaccinium myrtillus</div>
+              <p>Contains anthocyanins; traditionally associated with micro-circulation support.</p>
+            </div>
+          </div>
+          <div class="ing-card">
+            <div class="ing-emoji">🫐</div>
+            <div class="ing-info">
+              <h4>Elderberry</h4>
+              <div class="latin">Sambucus nigra</div>
+              <p>Rich in flavonoids; traditionally used as part of immune and circulatory wellness.</p>
+            </div>
+          </div>
+          <div class="ing-card">
+            <div class="ing-emoji">🌺</div>
+            <div class="ing-info">
+              <h4>Manjistha</h4>
+              <div class="latin">Rubia cordifolia</div>
+              <p>Traditionally used in Ayurveda for blood and lymph system support.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="system-group">
+        <div class="system-label"><span>⚡</span> Energy &amp; Vitality</div>
+        <div class="ing-grid">
+          <div class="ing-card">
+            <div class="ing-emoji">💪</div>
+            <div class="ing-info">
+              <h4>Safed Musli</h4>
+              <div class="latin">Chlorophytum borivilianum</div>
+              <p>Traditionally used to support physical stamina and recovery.</p>
+            </div>
+          </div>
+          <div class="ing-card">
+            <div class="ing-emoji">🌸</div>
+            <div class="ing-info">
+              <h4>Gokshura</h4>
+              <div class="latin">Tribulus terrestris</div>
+              <p>Traditionally used to support vitality and endurance.</p>
+            </div>
+          </div>
+          <div class="ing-card">
+            <div class="ing-emoji">🌼</div>
+            <div class="ing-info">
+              <h4>Shatavari</h4>
+              <div class="latin">Asparagus racemosus</div>
+              <p>Nourishing adaptogen traditionally used to support energy and balance.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="system-group">
+        <div class="system-label"><span>🛡️</span> Antioxidant &amp; Nutritional Support</div>
+        <div class="ing-grid">
+          <div class="ing-card">
+            <div class="ing-emoji">🌳</div>
+            <div class="ing-info">
+              <h4>Mangosteen</h4>
+              <div class="latin">Garcinia mangostana</div>
+              <p>Source of xanthones; contains antioxidant compounds that may support cellular pathways.</p>
+            </div>
+          </div>
+          <div class="ing-card">
+            <div class="ing-emoji">🌿</div>
+            <div class="ing-info">
+              <h4>Punarnava</h4>
+              <div class="latin">Boerhavia diffusa</div>
+              <p>Traditionally used to support healthy fluid balance and general wellness.</p>
+            </div>
+          </div>
+          <div class="ing-card">
+            <div class="ing-emoji">🌿</div>
+            <div class="ing-info">
+              <h4>Sigru (Moringa)</h4>
+              <div class="latin">Moringa oleifera</div>
+              <p>Nutrient-dense botanical traditionally valued for overall nutrition support.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Nutrigenomics - responsible language -->
+  <section class="science">
+    <div class="container">
+      <h2 class="section-title">Why Nutrition &amp; Lifestyle Matter</h2>
+      <p class="section-sub">
+        Nutrition provides bioactive compounds and nutrients that participate in normal cellular processes. Nutrigenomics studies how nutrients and dietary components interact with biological pathways and gene expression.
+      </p>
+      <div class="science-grid">
+        <div class="science-card">
+          <h4>Cellular Support</h4>
+          <p>Nutrients and phytonutrients participate in normal cell membrane and antioxidant-related processes.</p>
+        </div>
+        <div class="science-card">
+          <h4>Pathway Interaction</h4>
+          <p>Dietary components can influence biological pathways that relate to energy, recovery and balance.</p>
+        </div>
+        <div class="science-card">
+          <h4>Individual Variation</h4>
+          <p>Responses to nutrition and lifestyle differ from person to person based on many factors.</p>
+        </div>
+        <div class="science-card">
+          <h4>Holistic Context</h4>
+          <p>Supplements are best understood as one part of a broader nutrition and lifestyle approach.</p>
+        </div>
+      </div>
+      <p class="science-note">
+        Genes influence susceptibility and biological responses, but genes are not destiny. Nutrition and lifestyle should be considered as part of a broader, individualized health approach.
+      </p>
+    </div>
+  </section>
+
+  <!-- Disclaimer -->
+  <p class="disclaimer">
+    <strong>Disclaimer:</strong> Renatus Nova is a nutritional supplement / nutraceutical. It is not intended to diagnose, treat, cure or prevent any disease. Individual responses may vary. If you have a medical condition, are pregnant/breastfeeding, take medicines, or have any health concern, consult your qualified healthcare professional before using supplements.
+  </p>
+
+  <footer>
+    <div class="container">
+      <p><strong>ASHISH RELAN</strong> · Nutrigenomics Dietitian &amp; Nutritionist</p>
+      <p>FOOD IS MEDICINE — Healing From Cell To Society</p>
+      <p style="margin-top:12px;">
+        <a href="https://wa.me/919923185007">WhatsApp</a> ·
+        <a href="tel:9923185007">9923185007</a>
+      </p>
+    </div>
+  </footer>
+
+
+
+</body></html>
